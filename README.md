@@ -59,7 +59,7 @@ npx playwright install chromium
 
 | Dependency | Purpose |
 |-----------|----------|
-| [pi-telegram](https://github.com/earendil-works/pi) bridge | Native voice-note delivery (optional) |
+| [pi-telegram](https://github.com/mfittko/pi-telegram) bridge | Native voice-note delivery (optional) |
 | `telegram-tts-kokoro` or `telegram-tts-local` | High-quality TTS backend (optional) |
 | `say` + `ffmpeg` | macOS fallback TTS pipeline |
 
