@@ -105,3 +105,7 @@ cp -r /path/to/skills/deslop .pi/skills/
 ## Skill interaction
 
 The `presentation-builder` skill references `deslop` rules during Phase 2 (variant generation) and Phase 3 (story review). Both skills can be loaded simultaneously — the presentation-builder will apply deslop constraints automatically when generating and reviewing slide content.
+
+## Credits
+
+The deslop skill is based on [stephenturner/skill-deslop](https://github.com/stephenturner/skill-deslop). The tropes catalog originates from [tropes.fyi](https://tropes.fyi) by [ossama.is](https://ossama.is).
