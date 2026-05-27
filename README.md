@@ -1,6 +1,6 @@
 # skills
 
-Reusable [Pi](https://github.com/earendil-works/pi-coding-agent) agent skills.
+Reusable [Pi](https://github.com/earendil-works/pi) agent skills.
 
 ## Installation
 
