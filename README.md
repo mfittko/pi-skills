@@ -55,6 +55,16 @@ npm install -D @slidev/cli @slidev/theme-default playwright-chromium
 npx playwright install chromium
 ```
 
+### audio-note
+
+| Dependency | Purpose |
+|-----------|----------|
+| [pi-telegram](https://github.com/earendil-works/pi) bridge | Native voice-note delivery (optional) |
+| `telegram-tts-kokoro` or `telegram-tts-local` | High-quality TTS backend (optional) |
+| `say` + `ffmpeg` | macOS fallback TTS pipeline |
+
+The skill works without Telegram — it can generate `.ogg`/`.m4a` files locally using macOS `say` + `ffmpeg` as a fallback.
+
 ### deslop
 
 No external dependencies. Works with any Pi session. The skill is self-contained — load it for any writing, editing, or review task.
@@ -80,6 +90,14 @@ Remove AI writing patterns from prose and presentations. Combined general prose 
 Triggers: "deslop", "de-AI", "make it sound human", "remove AI patterns", "scrub this deck", "tighten slides"
 
 See [deslop/SKILL.md](deslop/SKILL.md) for rules and references.
+
+### audio-note
+
+Generate spoken replies and audio artifacts. Supports native Telegram voice-note delivery via pi-telegram, or local file generation with configurable TTS backends.
+
+Triggers: "audio", "voice summary", "voice note", "spoken version", "read this aloud"
+
+See [audio-note/SKILL.md](audio-note/SKILL.md) for the full workflow.
 
 ## Usage
 
