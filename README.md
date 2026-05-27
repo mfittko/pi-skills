@@ -1,4 +1,4 @@
-# skills
+# ∏ skills
 
 Personal, opinionated collection of [Pi](https://github.com/earendil-works/pi) agent skills. No warranty given.
 
