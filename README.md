@@ -2,6 +2,37 @@
 
 Reusable [Pi](https://github.com/earendil-works/pi-coding-agent) agent skills.
 
+## Installation
+
+Install as a Pi package (recommended):
+
+```bash
+# From GitHub
+pi install git:github.com/mfittko/skills
+
+# Or project-local
+pi install -l git:github.com/mfittko/skills
+```
+
+Update to latest:
+
+```bash
+pi update git:github.com/mfittko/skills
+```
+
+Filter to load only specific skills:
+
+```json
+{
+  "packages": [
+    {
+      "source": "git:github.com/mfittko/skills",
+      "skills": ["presentation-builder"]
+    }
+  ]
+}
+```
+
 ## Requirements
 
 ### presentation-builder
@@ -52,13 +83,12 @@ See [deslop/SKILL.md](deslop/SKILL.md) for rules and references.
 
 ## Usage
 
-### As global Pi skills
+Once installed as a package, both skills are automatically available in all Pi sessions. No manual symlinking needed.
+
+### Manual setup (alternative)
 
 ```bash
-# Clone to your skills directory
-git clone https://github.com/mfittko/skills.git ~/.pi/agent/skills-repo
-
-# Or symlink individual skills
+# Symlink individual skills into your global skills directory
 ln -s /path/to/skills/presentation-builder ~/.pi/agent/skills/presentation-builder
 ln -s /path/to/skills/deslop ~/.pi/agent/skills/deslop
 ```

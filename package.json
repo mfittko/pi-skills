@@ -1,0 +1,18 @@
+{
+  "name": "@mfittko/skills",
+  "version": "1.0.0",
+  "description": "Pi agent skills: presentation-builder and deslop",
+  "keywords": ["pi-package"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mfittko/skills.git"
+  },
+  "author": "mfittko",
+  "license": "MIT",
+  "pi": {
+    "skills": [
+      "presentation-builder",
+      "deslop"
+    ]
+  }
+}
