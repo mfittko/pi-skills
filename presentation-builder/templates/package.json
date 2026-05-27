@@ -1,0 +1,15 @@
+{
+  "name": "slidev-deck",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev docs/*.md --port 3031 --open false",
+    "build": "slidev build docs/*.md",
+    "export": "slidev export docs/*.md --output dist/deck.pdf"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.0.0",
+    "@slidev/theme-default": "latest",
+    "playwright-chromium": "^1.52.0"
+  }
+}
