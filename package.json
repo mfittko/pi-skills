@@ -1,11 +1,11 @@
 {
-  "name": "@mfittko/skills",
+  "name": "@mfittko/pi-skills",
   "version": "1.0.0",
   "description": "Pi agent skills: presentation-builder, deslop, and audio-note",
   "keywords": ["pi-package"],
   "repository": {
     "type": "git",
-    "url": "https://github.com/mfittko/skills.git"
+    "url": "https://github.com/mfittko/pi-skills.git"
   },
   "author": "mfittko",
   "license": "MIT",

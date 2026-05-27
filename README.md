@@ -8,16 +8,16 @@ Install as a Pi package (recommended):
 
 ```bash
 # From GitHub
-pi install git:github.com/mfittko/skills
+pi install git:github.com/mfittko/pi-skills
 
 # Or project-local
-pi install -l git:github.com/mfittko/skills
+pi install -l git:github.com/mfittko/pi-skills
 ```
 
 Update to latest:
 
 ```bash
-pi update git:github.com/mfittko/skills
+pi update git:github.com/mfittko/pi-skills
 ```
 
 Filter to load only specific skills:
@@ -26,7 +26,7 @@ Filter to load only specific skills:
 {
   "packages": [
     {
-      "source": "git:github.com/mfittko/skills",
+      "source": "git:github.com/mfittko/pi-skills",
       "skills": ["presentation-builder"]
     }
   ]
