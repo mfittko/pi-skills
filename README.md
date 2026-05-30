@@ -35,6 +35,19 @@ Filter to load only specific skills:
 
 ## Requirements
 
+### codebase-deslop-audit
+
+| Dependency | Purpose |
+|-----------|---------|
+| [pi-subagents](https://www.npmjs.com/package/pi-subagents) extension | Parallel area audits with focused subagents |
+
+The skill works without repo-local code changes — it is primarily a read-only audit workflow — but it is much better with `pi-subagents` available for fan-out / fan-in analysis.
+
+Install the pi-subagents extension:
+```bash
+pi extensions add pi-subagents
+```
+
 ### presentation-builder
 
 | Dependency | Purpose |
@@ -71,6 +84,14 @@ No external dependencies. Works with any Pi session. The skill is self-contained
 
 ## Skills
 
+### codebase-deslop-audit
+
+Run a rigorous deletion-first codebase audit for slop: redundant code, stale docs, contradicting guidance, overbuilt architecture, duplicate tests, and unclear workflow surface.
+
+Triggers: "slop audit", "declutter audit", "full codebase audit", "DRY audit", "go through every file", "find redundancies and contradictions"
+
+See [codebase-deslop-audit/SKILL.md](codebase-deslop-audit/SKILL.md) for the workflow.
+
 ### presentation-builder
 
 Create polished Slidev pitch decks using a parallel-variant chain workflow:
@@ -101,7 +122,7 @@ See [audio-note/SKILL.md](audio-note/SKILL.md) for the full workflow.
 
 ## Usage
 
-Once installed as a package, both skills are automatically available in all Pi sessions. No manual symlinking needed.
+Once installed as a package, all skills are automatically available in all Pi sessions. No manual symlinking needed.
 
 ### Manual setup (alternative)
 
@@ -109,6 +130,7 @@ Once installed as a package, both skills are automatically available in all Pi s
 # Symlink individual skills into your global skills directory
 ln -s /path/to/skills/presentation-builder ~/.pi/agent/skills/presentation-builder
 ln -s /path/to/skills/deslop ~/.pi/agent/skills/deslop
+ln -s /path/to/skills/codebase-deslop-audit ~/.pi/agent/skills/codebase-deslop-audit
 ```
 
 ### As project-local skills
@@ -118,6 +140,7 @@ ln -s /path/to/skills/deslop ~/.pi/agent/skills/deslop
 mkdir -p .pi/skills
 cp -r /path/to/skills/presentation-builder .pi/skills/
 cp -r /path/to/skills/deslop .pi/skills/
+cp -r /path/to/skills/codebase-deslop-audit .pi/skills/
 ```
 
 ## Skill interaction

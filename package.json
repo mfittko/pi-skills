@@ -1,7 +1,7 @@
 {
   "name": "@mfittko/pi-skills",
   "version": "1.0.0",
-  "description": "Pi agent skills: presentation-builder, deslop, and audio-note",
+  "description": "Pi agent skills: presentation-builder, deslop, audio-note, and codebase-deslop-audit",
   "keywords": ["pi-package"],
   "repository": {
     "type": "git",
@@ -13,7 +13,8 @@
     "skills": [
       "presentation-builder",
       "deslop",
-      "audio-note"
+      "audio-note",
+      "codebase-deslop-audit"
     ]
   }
 }
